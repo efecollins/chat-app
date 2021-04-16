@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Rubik', sans-serif;
+  background-color: #f5f3f7;
+}
+
+.bg {
+  position: fixed;
+  z-index: -1;
+  content: '';
+  width: 350px;
+  height: 85%;
+}
+
+.bg-purple {
+  top: 0;
+  background: linear-gradient(45deg, #8838ff, #e942ff);
+  border-radius: 0 0 250px 250px;
+}
+
+.bg-gray {
+  bottom: 0;
+  left: 980px;
+  background-color: #c6cacd;
+  opacity: 0.1;
+  border-radius: 300px 250px 0 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: auto;
+}
+
+.phone {
+  width: 295px;
+  margin-left: 22.2%;
+  margin-top: 10%;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: -webkit-gradient(linear, right top, left top, from(#e942ff), to(#8838ff));
+  background-image: linear-gradient(to left, #e942ff, #8838ff);
+  padding: 30px 15px 15px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.header-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 1.4px solid white;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 15px;
+}
+
+.header .fa-chevron-left {
+  color: white;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 10px;
+}
+
+.header .fa-ellipsis-v {
+  color: white;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 90px;
+}
+
+.user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.user h3 {
+  color: white;
+  font-size: .7rem;
+  margin-bottom: 2px;
+  font-weight: 500;
+}
+
+.user h5 {
+  color: #d89eff;
+  font-size: .5rem;
+}
+
+.chat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f5f3f7;
+  border-radius: 30px;
+  border: 10px solid white;
+  -webkit-box-shadow: 0 15px 21px 2px #a39daa;
+          box-shadow: 0 15px 21px 2px #a39daa;
+}
+
+.chat .dog {
+  margin-top: 15px;
+  padding: 0;
+  max-width: 60%;
+  min-width: 0;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background-color: transparent;
+}
+
+.chat .right-first {
+  max-width: 50%;
+  min-width: 0;
+  margin-left: 50%;
+}
+
+.chat .right-last {
+  margin-bottom: 10px;
+  max-width: 50%;
+  min-width: 0;
+  margin-left: 60%;
+}
+
+.chat-left {
+  font-size: .6rem;
+  background-color: #ede5f3;
+  color: #9241c8;
+  width: 56%;
+  margin: 10px 0 0 8px;
+  padding: 7px;
+  line-height: 1.5;
+  border-radius: 9.8px;
+  border-bottom-left-radius: 3px;
+}
+
+.chat-left-time {
+  background: -webkit-gradient(linear, left top, right top, from(#e942ff), to(#8838ff));
+  background: linear-gradient(to right, #e942ff, #8838ff);
+  padding: 10px 5px;
+  font-size: .5rem;
+  color: white;
+  margin-left: 7px;
+  margin-bottom: 7px;
+  width: 56%;
+  border-radius: 9.8px;
+  border-bottom-left-radius: 3px;
+}
+
+.chat-left-time .fa-circle {
+  margin-right: 7px;
+  color: #e570ff;
+}
+
+.chat-left-minute {
+  margin-top: 10px;
+}
+
+.chat-left-minute .price {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-left: 30px;
+}
+
+.chat-left-hour {
+  margin-top: 3px;
+}
+
+.chat-left-hour .price {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-left: 45px;
+}
+
+.chat-right {
+  min-width: 56%;
+  margin-left: 40%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: .6rem;
+  background-color: white;
+  color: #6e5d7e;
+  padding: 7px;
+  line-height: 1.5;
+  border-radius: 9px;
+  border-bottom-right-radius: 3px;
+  margin-right: 8px;
+  margin-top: 10px;
+}
+
+.chat-right-image {
+  width: 42px;
+  height: 42px;
+  border-radius: 20%;
+  margin-right: 5px;
+}
+
+.chat .send-msg {
+  position: relative;
+  margin: 5px auto 13px 7px;
+}
+
+.chat .send-msg input {
+  width: 255px;
+  height: 35px;
+  padding: 20px 50px 20px 20px;
+  border-radius: 100px;
+  border: none;
+  font-family: 'Rubik', sans-serif;
+  font-size: 0.6rem;
+}
+
+.chat .send-msg input ::-webkit-input-placeholder {
+  color: #c6cacd;
+  opacity: 0.2;
+}
+
+.chat .send-msg input :-ms-input-placeholder {
+  color: #c6cacd;
+  opacity: 0.2;
+}
+
+.chat .send-msg input ::-ms-input-placeholder {
+  color: #c6cacd;
+  opacity: 0.2;
+}
+
+.chat .send-msg input ::placeholder {
+  color: #c6cacd;
+  opacity: 0.2;
+}
+
+.chat .send-msg button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background: #3e2753;
+  color: white;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.introduction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 1.5;
+  width: 35%;
+  position: relative;
+  left: 700px;
+  bottom: 425px;
+}
+
+.introduction-heading {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 13px;
+  color: #3e2753;
+}
+
+.introduction-text {
+  color: #a39daa;
+}
+
+@media screen and (max-width: 991px) {
+  .bg-purple {
+    left: -50px;
+    top: -100px;
+  }
+  .bg-gray {
+    left: 650px;
+    bottom: -200px;
+  }
+  .phone {
+    width: 287px;
+    margin-left: 22.5%;
+  }
+  .introduction {
+    left: 590px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .bg-purple {
+    left: -100px;
+    top: -150px;
+  }
+  .bg-gray {
+    left: 480px;
+    bottom: -190px;
+  }
+  .phone {
+    width: 287px;
+    margin-left: 23%;
+  }
+  .introduction {
+    left: 53px;
+    bottom: 40px;
+    width: 70%;
+    text-align: center;
+  }
+  .introduction-heading {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .bg-purple {
+    left: -150px;
+    top: -150px;
+  }
+  .bg-gray {
+    left: 250px;
+    bottom: -190px;
+  }
+  .phone {
+    width: 290px;
+  }
+  .introduction {
+    left: 85px;
+    bottom: 40px;
+    width: 70%;
+    text-align: center;
+  }
+  .introduction-heading {
+    margin-top: 100px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
