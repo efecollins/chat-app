@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [My Frontend Mentor Profile Solutions](https://www.frontendmentor.io/profile/efecollins)
-- Live Site URL: [My live site URL](https://efecollins.github.io/chat-app)
+- Live Site URL: [My live site URL](https://efecollins.github.io/chat-app/dist)
 
 ## My process
 
